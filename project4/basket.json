@@ -1,0 +1,34 @@
+{
+    "basket": [
+        {
+            "id": 101, 
+            "title": "Psychology", 
+            "price": 20, 
+            "photo": "https://images.booksense.com/images/568/458/9781465458568.jpg"
+        }, 
+        {
+            "id": 102, 
+            "title": "Philosophy", 
+            "price": 30, 
+            "photo": "https://images.booksense.com/images/551/458/9781465458551.jpg"
+        }, 
+        {
+            "id": 103, 
+            "title": "Biology", 
+            "price": 40, 
+            "photo": "https://cdn.gramedia.com/uploads/items/THE_BIOLOGY_BOOK.jpg"
+        }, 
+        {
+            "id": 104, 
+            "title": "Poetry", 
+            "price": 50, 
+            "photo": "https://static.yakaboo.ua/media/cloudflare/product/webp/352x340/9/7/9780241566237.jpg"
+        }, 
+        {
+            "id": 105, 
+            "title": "Sociology", 
+            "price": 60, 
+            "photo": "https://m.media-amazon.com/images/I/81z-Pj9NxjL._AC_UF1000,1000_QL80_.jpg"
+        }
+    ]
+}
