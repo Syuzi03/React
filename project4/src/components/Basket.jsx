@@ -1,27 +1,28 @@
-import { BasketItem } from "./BasketItem"
+import { useContext } from 'react'
+import { ProductContext } from '../ProductContext'
+import { BasketItem } from './BasketItem'
 
-export const Basket = ({items, onUp, onDown, onDelete, total}) =>{
-    return <div>
-        <h3>Basket</h3>
-        <h4>Total: {total} AMD</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>product</th>
-                    <th>price</th>
-                    <th>count</th>
-                    <th>subtotal</th>
-                    <th>actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    items.map(elm => <BasketItem key={elm.id} {...elm}
-                        onUp={onUp} 
-                        onDown={onDown}
-                        onDelete={onDelete}/>)
-                }
-            </tbody>
-        </table>
+export const Basket = () => {
+  const { state } = useContext(ProductContext)
+
+  return (
+    <div>
+      <h3>Basket</h3>
+      <h4>Total: {state.total} USD</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Count</th>
+            <th>Subtotal</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {state.basket.map(elm => <BasketItem key={elm.id} {...elm} />)}
+        </tbody>
+      </table>
     </div>
+  )
 }
