@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "d662",
+      "text": "drink coffee",
+      "completed": false
+    },
+    {
+      "id": "065b",
+      "text": "smile",
+      "completed": false
+    },
+    {
+      "id": "e867",
+      "text": "drink milk",
+      "completed": true
+    },
+    {
+      "id": "48bc",
+      "text": "run",
+      "completed": false
+    }
+  ]
+}
